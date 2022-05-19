@@ -76,7 +76,7 @@ docker run -ti --rm \
 mv smooth10.sh outfMRIPrep/.
 chmod +x outfMRIPrep/smooth10.sh 
 
-# Use fMRIPrep to smooth MNI fMRI with 5mm Gaussian kernel
+# Use fMRIPrep to smooth MNI fMRI with 10mm Gaussian kernel
 docker run -ti --rm \
     -v ${TR_PWD}/ds005/:/data:ro \
     -v ${TR_PWD}/outfMRIPrep/:/out \
