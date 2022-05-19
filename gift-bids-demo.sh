@@ -94,6 +94,7 @@ cp outfMRIPrep/fmriprep/sub-01/func/sub-01_task-mixedgamblestask_run-1_space-MNI
     ds005-gift/sub-01/func/sub-01_task-mixedgamblestask_run-01_bold.nii.gz
 mkdir ds005-gift-out
 
+# Run GIFT BIDS-Apps
 docker run -ti --rm \
     -v /tmp:/tmp \
     -v /var/tmp:/var/tmp \
