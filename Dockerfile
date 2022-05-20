@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:22.04
 
 MAINTAINER TReNDS Center Cyrus Eierud <ceierud@gsu.edu>
 
