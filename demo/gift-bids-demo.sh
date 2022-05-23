@@ -10,28 +10,30 @@
 #
 # 2) Open terminal, create and go to working directory of your choice.
 #
-# 3) Clone or unzip the https://github.com/bids-apps/gift-bids repository 
-#    in this working directory.
+# 3) Clone or unzip the https://github.com/trendscenter/gift-bids repository 
+#    to the root of your working directory.
 #
 # 4) Download the ds005.tar dataset from 
 # https://drive.google.com/drive/folders/0B2JWN60ZLkgkMGlUY3B4MXZIZW8?resourcekey=0-EYVSOlRbxeFKO8NpjWWM3w 
-#    to directory where this file is located. This ds005.tar dataset is 
+#     into the demo directory. This ds005.tar dataset is 
 #    described at the BIDS App tutorial web page 
 #    (https://bids-apps.neuroimaging.io/tutorial).
 #
 # 5) If you do not have a free FreeSurfer license you need to apply for 
 #    the license file by registering according with the link 
 #    https://surfer.nmr.mgh.harvard.edu/registration.html and then place 
-#    your FreeSurfer license.txt file in your working directory.
+#    your FreeSurfer license.txt file into the demo directory.
 #
-# 6) Finally this script (gift-bids-demo.sh) may be run in terminal by: 
+# 6) Finally this script (gift-bids-demo.sh) may be run in terminal by:
+#    cd demo #directory with cfg  gift-bids-demo.sh  smooth10.sh
+#    chmod +x gift-bids-demo.sh
 #    ./gift-bids-demo.sh
 #
-# After this Docker will download images for fmriprep and bids/gift 
+# After this Docker will download images for fmriprep and trends/gift-bids 
 # containers. It will then run fmriprep for a single subject which may 
-# take 2h or more. Finally bids/gift will run for at least 5 min.
+# take 2h or more. Finally trends/gift-bids will run for at least 5 min.
 #
-# Results may be found under ds005-gift-out directory
+# Results are found under ds005-gift-out directory
 
 # Sanity check before run
 FILE=ds005.tar
@@ -55,9 +57,9 @@ tar -xf ds005.tar
 # Get current directory
 TR_PWD=`pwd`
 
-# Downloads the fMRIPrep Docker Image from internet (5+ minutes)
+# Downloads the fMRIPrep & giftbids Docker Images from internet (5+ minutes)
 docker pull nipreps/fmriprep 
-docker image build -t bids/gift .
+docker pull trends/gift-bids
 
 mkdir outfMRIPrep # for fMRIPrep results
 mv license.txt outfMRIPrep/. # needed for fMRIPrep
@@ -100,6 +102,7 @@ docker run -ti --rm \
     -v /var/tmp:/var/tmp \
     -v ${TR_PWD}/ds005-gift/:/data \
     -v ${TR_PWD}/ds005-gift-out/:/output \
-    bids/gift \
+    -v ${TR_PWD}/cfg/:/cfg \
+    trends/gift-bids \
     /data /output participant --participant_label 01 \
-    --config /app/config_spatial_ica_bids.m
+    --config /cfg/config_spatial_ica_bids.m
