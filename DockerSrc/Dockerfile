@@ -29,7 +29,7 @@ ENV GICA_VER=v4.0c
 ENV GICA_INSTALL_DIR=/app/
 
 # Building entrypoint
-COPY run.sh *.m  /app/
+COPY run.sh gica_bids_app.m /app/
 WORKDIR /app
 RUN chmod +x /app/groupica
 ENTRYPOINT ["/app/run.sh"]
