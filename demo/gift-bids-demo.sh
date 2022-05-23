@@ -1,7 +1,7 @@
 #!/bin/bash
 # Demo script of Group Independent Component Analysis (gift) BIDS-App, 
 # using BIDS-App data (16 subjects) and fMRIPrep
-# Version 1.001
+# Version 1.000
 # Cyrus Eierud, TReNDS
 
 # Please note that before running this demo the following is needed:
