@@ -42,7 +42,7 @@ $ cd demo
 $ chmod +x gift-bids-demo.sh
 $ ./gift-bids-demo.sh
 ```
-After this Docker may download images for fmriprep and bids/gift containers (if needed)). It will then run fmriprep for a single subject which may take 2h or more. Finally bids/gift will run for at least 5 min. Results may be found under ds005-gift-out directory
+After this Docker may download images for fmriprep and trends/gift-bids images (if needed)). It will then run fmriprep for a single subject which may take 2h or more. Finally trends/gift-bids will run for 5 min or more. Results are found under demo/ds005-gift-out directory
 ### Version <a name="secVer"></a>
 GIFT-BIDS-Apps-Scripts=1.000
 GIFT-Linux-Compile=1.000

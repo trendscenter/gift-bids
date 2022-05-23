@@ -15,17 +15,16 @@
 #
 # 4) Download the ds005.tar dataset from 
 # https://drive.google.com/drive/folders/0B2JWN60ZLkgkMGlUY3B4MXZIZW8?resourcekey=0-EYVSOlRbxeFKO8NpjWWM3w 
-#     into the demo directory. This ds005.tar dataset is 
+#     into your working directory (step 2). This ds005.tar dataset is 
 #    described at the BIDS App tutorial web page 
 #    (https://bids-apps.neuroimaging.io/tutorial).
 #
 # 5) If you do not have a free FreeSurfer license you need to apply for 
 #    the license file by registering according with the link 
 #    https://surfer.nmr.mgh.harvard.edu/registration.html and then place 
-#    your FreeSurfer license.txt file into the demo directory.
+#    your FreeSurfer license.txt file into your working directory.
 #
 # 6) Finally this script (gift-bids-demo.sh) may be run in terminal by:
-#    cd demo #directory with cfg  gift-bids-demo.sh  smooth10.sh
 #    chmod +x gift-bids-demo.sh
 #    ./gift-bids-demo.sh
 #
