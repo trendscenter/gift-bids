@@ -9,8 +9,8 @@
 5. [Version](#secVer)
 ### Introduction <a name="secIntro"></a>
 This BIDS-App (gift-bids) works after Docker is installed and does not need any other application such as MATLAB since a compiled MATLAB engine is used. The gift-bids app implements multiple algorithms for independent component analysis and blind source separation of group (and single subject) functional magnetic resonance imaging data.
-### IRegular GIFT <a name="secRegul"></a>
-If you have MATLAB installed on your computer and you are not interested in running GIFT under a computer cluster you may want to try our regular GIFT found [here](https://github.com/trendscenter/gift).
+### Regular GIFT <a name="secRegul"></a>
+If you have MATLAB installed on your computer and you are not interested in running GIFT under a computer cluster you may want to try our regular GIFT found [here](https://github.com/trendscenter/gift). Our regular GIFT may be easier to learn as it has an intuitive user interface.
 ### Usage <a name="secUsage"></a>
 After Docker is properly installed you can download your gift-bids image from the internet (https://hub.docker.com/u/trends) by following:
 ```
