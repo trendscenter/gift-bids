@@ -19,8 +19,8 @@ $ docker pull trends/gift-bids
 To run gift-bids you need: 
 1. A directory with image files in accordance with the BIDS format (my_data)
 2. An empty output directory (gift_out) you may create
-3. A configuration directory with your configuration file and change the syntax of YYY in accordance with box below and your configuration file.
-4. Choose subject you want to process, by replacing XX with that subject number in box below and you may run:
+3. A configuration directory with your configuration file and change the syntax of ZZZ in accordance with box below and your configuration file.
+4. Choose subject(s) you want to process, by replacing XX YY NN with subject number(s) in box below (e.g., 01 02 ... NN) and you may run:
 ```
 $ docker run -ti --rm \
   -v /tmp:/tmp \
@@ -29,8 +29,8 @@ $ docker run -ti --rm \
   -v /path/to/local/gift_out/:/output \
   -v /path/to/local/cfg/:/cfg \
   trends/gift-bids \
-    /data /output participant --participant_label XX \
-    --config /cfg/config_YYY.m
+    /data /output participant --participant_label XX YY NN \
+    --config /cfg/config_ZZZ.m
 ```
 ### Demo <a name="secDemo"></a>
 A demo (gift-bids-demo.sh) is available, using a public fMRI dataset and the fMRIPrep BIDS app to preprocess and smooth the fMRI data. In 6 simple steps you may run the entire demo:
