@@ -12,7 +12,7 @@ outputDir = evalin('base', 'GICA_OUTPUTDIR');
 
 
 %% Enter TR in seconds. If TRs vary across subjects, TR must be a row vector of length equal to the number of subjects.
-TR = 1;
+TR = 2;
 
 %% Parallel info
 % enter mode serial or parallel. If parallel, enter number of
