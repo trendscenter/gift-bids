@@ -15,7 +15,7 @@ RUN apt-get update -y \
  && ./MCR_R2016b_Update_6_glnxa64.sh \
  && mkdir -p /app \ 
  && rm -rf /tmp_mcr \
- && wget -P /app https://trendscenter.org/trends/software/gift/software/bids/groupica
+ && wget -P /app https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/gift/software/bids/groupica
 # groupica is compiled using MATLAB version R2016b.
 
 # Environment variables
