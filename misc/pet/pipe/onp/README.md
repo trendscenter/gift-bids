@@ -39,4 +39,4 @@ The following is an ouline of the different steps used to process PET for GIFT.
     1. One second stage analysis was to first performed a conservative one-sample ttest to only include the voxels that have significantly (p < 0.0001) more uptake than the cerebellar cortex, creating a stringent mask.
         1. Inside of this uptake mask we regressed the 250 subjects with age, resulting an age contrast beta image.
     2. Another second stage analysis was to take an average of the 250 subjects, creating an average SUVR map.
-    2. In addition we have performed Independent Component Analysis (ICA), using [GIFT](https://github.com/trendscenter/gift). 
+    2. In addition we have performed Independent Component Analysis (ICA), using [GIFT-BIDS](https://github.com/trendscenter/gift-bids). 
