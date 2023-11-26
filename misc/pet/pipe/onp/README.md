@@ -29,5 +29,7 @@ The following is an ouline of the different steps used to process PET for GIFT.
     2. Change config.json with the lines having (since petrep_hmc was already run):
         1. <pre>"mc": {"precomp": "", "cost": "normcorr",  "dof": 6,  "save_plots": true, "refvol": 8},</pre>
         2. to: <pre>{"mc": {"precomp": "hmc_workflow" },</pre>
-6. [Toolboxes](#secTools)
+    3. From command shell, run: 
+        1. <pre>matlab -nodesktop -nosplash -r "PETPrep(' /myfiles/bidsRoot/ ', 'config.json');exit;"</pre>pre>
+6. Finally the custom BASH script trn were used to average the 4 PET FBP frames (now in MNI space) into a single image normalizing intensities using the standardized uptake value ratio and the cerebellar cortex region. 
 	1. [Mancovan](#secToolMan)
