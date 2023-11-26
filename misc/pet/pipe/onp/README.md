@@ -22,9 +22,9 @@ The following is an ouline of the different steps used to process PET for GIFT.
 3. Using FreeSurfer and its recon-all function to process 3T T1 MRI to create a reference frame for the FBP images according with following (after placing t1s at /myfiles/fs/sub-xxxx.nii):
     1. recon-all -subjid sub-xxxx -i /myfiles/fs/sub-xxxx.nii -all -sd /myfiles/bidsRoot/derivatives/freesurfer/sub-xxxx
 4. After BIDS data was placed under /myfiles/bidsRoot the Open NeuroPET software PETprep_HMC (head motion correction) was run, correcting the 4 PET frames for head motion, using following syntax:
-```
+<pre>
 python3 run.py --bids_dir /myfiles/bidsRoot/ --output_dir /myfiles/bidsRoot/derivatives/petprep_hmc/ --n_procs 7 --analysis_level participant  --participant_label 0001 0002 ... 00NN
-```
+</pre>
         1. , where 0001 0002 ... 00NN, represents the subject IDs that will be run.
 5. Using the motion correction from step 4, and FreeSurfer results from step 3, PETprepMATLAB was run, which basically is a wrapper for petsurfer, getting properties of the cerebellar cortex size and intensities used to calculate SUVR, according with following steps:
     1. In the file “PETPrep.m”, comment out the line having syntax (since freesurfer was already run): ReconAll(BIDS) 
