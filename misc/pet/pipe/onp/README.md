@@ -25,7 +25,7 @@ The following is an ouline of the different steps used to process PET for GIFT.
 <pre>
 python3 run.py --bids_dir /myfiles/bidsRoot/ --output_dir /myfiles/bidsRoot/derivatives/petprep_hmc/ --n_procs 7 --analysis_level participant  --participant_label 0001 0002 ... 00NN
 </pre>
-        1. , where 0001 0002 ... 00NN, represents the subject IDs that will be run.
+   where 0001 0002 ... 00NN, represents the subject IDs that will be run.
 5. Using the motion correction from step 4, and FreeSurfer results from step 3, PETprepMATLAB was run, which basically is a wrapper for petsurfer, getting properties of the cerebellar cortex size and intensities used to calculate SUVR, according with following steps:
     1. In the file “PETPrep.m”, comment out the line having syntax (since freesurfer was already run): ReconAll(BIDS) 
     2. Change config.json with the lines having (since petrep_hmc was already run):
