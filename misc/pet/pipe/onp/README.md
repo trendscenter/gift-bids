@@ -31,5 +31,12 @@ The following is an ouline of the different steps used to process PET for GIFT.
         2. to: <pre>{"mc": {"precomp": "hmc_workflow" },</pre>
     3. From command shell, run: 
         1. <pre>matlab -nodesktop -nosplash -r "PETPrep(' /myfiles/bidsRoot/ ', 'config.json');exit;"</pre>
-6. Finally the custom BASH script [trnSuvr.sh](www.google.com) were used to average the 4 PET FBP frames (now in MNI space) into a single image normalizing intensities using the standardized uptake value ratio and the cerebellar cortex region. 
-	1. [Mancovan](#secToolMan)
+6. Finally the custom BASH script [trnSuvr.sh](https://github.com/trendscenter/gift-bids/blob/main/misc/pet/pipe/onp/trnSuvr.sh) were used to average the 4 PET FBP frames (now in MNI space) into a single image normalizing intensities using the standardized uptake value ratio and the cerebellar cortex region, using the following syntax:
+    1. <pre>./trnSuvr.sh xxxx /myfiles/bidsRoot/</pre> 
+    2. , where xxxx is the subject ID. This bash script only runs one subject at a time.
+    3. The SUVR image results are saved under: /myfiles/bidsRoot/derivatives/GIFT-BIDS/preproc/sub-xxxx
+7. Having these SUVR normalized images, enables multiple second stage analyses.
+    1. One second stage analysis was to first performed a conservative one-sample ttest to only include the voxels that have significantly (p < 0.0001) more uptake than the cerebellar cortex, creating a stringent mask.
+        1. Inside of this uptake mask we regressed the 250 subjects with age, resulting an age contrast beta image.
+    2. Another second stage analysis was to take an average of the 250 subjects, creating an average SUVR map.
+    2. In addition we have performed Independent Component Analysis (ICA), using [GIFT](https://github.com/trendscenter/gift). 
