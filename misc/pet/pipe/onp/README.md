@@ -10,7 +10,7 @@ The following is an ouline of the different steps used to process PET for GIFT.
     1. /myfiles/bidsRoot
         1. participants.tsv
         2. participants.json
-        3.	other files
+        3.	...
         4.	derivatives
             1. freesurfer
                 1. sub-xxxx
