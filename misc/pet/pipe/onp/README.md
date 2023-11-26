@@ -27,9 +27,7 @@ The following is an ouline of the different steps used to process PET for GIFT.
 5. Using the motion correction from step 4, and FreeSurfer results from step 3, PETprepMATLAB was run, which basically is a wrapper for petsurfer, getting properties of the cerebellar cortex size and intensities used to calculate SUVR, according with following steps:
     1. In the file “PETPrep.m”, comment out the line having syntax (since freesurfer was already run): ReconAll(BIDS) 
     2. Change config.json with the lines having (since petrep_hmc was already run):
-       "mc": {"precomp": "", "cost": "normcorr",  "dof": 6,  "save_plots": true, "refvol": 8},
-to:
-        {"mc": {"precomp": "hmc_workflow" },
-
+        1. <pre>"mc": {"precomp": "", "cost": "normcorr",  "dof": 6,  "save_plots": true, "refvol": 8},</pre>
+        2. to: <pre>{"mc": {"precomp": "hmc_workflow" },</pre>
 6. [Toolboxes](#secTools)
 	1. [Mancovan](#secToolMan)
