@@ -13,7 +13,12 @@ The following is an ouline of the different steps used to process PET for GIFT.
         3.	other files
         4.	derivatives
             1. freesurfer
-
+                1. sub-xxx
+        5.	sub-xxx
+            1. baseline
+                1. pet
+                    1. file.nii
+                    2. file.json
 3. 
 4. [GIFT BIDS-Apps](#secBids)
 5. [Screen Shots](#secScreen)
