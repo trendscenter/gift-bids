@@ -1,5 +1,39 @@
 #!/bin/bash
 
+mv '/root/data_fbb/fbb198/tmp/6443/I1044158_Florbetaben_Dyn_4x5min_2Di_336_2z_AllPass_(AC)_20180829152603_3.nii' /root/data_fbb/bids111423helen/sub-6443/ses-baseline/pet/sub-6443_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6116/I1262873_PET_AC_20191204153243_5.nii' /root/data_fbb/bids111423helen/sub-6116/ses-baseline/pet/sub-6116_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6577/I1063932_ADNI_Brain_PET_Raw_20181024161056_7200.nii' /root/data_fbb/bids111423helen/sub-6577/ses-baseline/pet/sub-6577_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6580/I1631035_PET_Brain_-_DYNAMIC_4X5MIN_20221013162021_6.nii' /root/data_fbb/bids111423helen/sub-6580/ses-baseline/pet/sub-6580_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6136/I1591796_ADNI_Amyloid_4x5min_corr_unmatch_20220510131050_15.nii' /root/data_fbb/bids111423helen/sub-6136/ses-baseline/pet/sub-6136_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6043/I1265213_ADNI3_florbetaben_Brain_20min_dyn_20191211160502_6.nii' /root/data_fbb/bids111423helen/sub-6043/ses-baseline/pet/sub-6043_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6974/I1516794_PET_Brain_20211117131911_5.nii' /root/data_fbb/bids111423helen/sub-6974/ses-baseline/pet/sub-6974_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6977/I1516832_PET_Brain_20211117145518_5.nii' /root/data_fbb/bids111423helen/sub-6977/ses-baseline/pet/sub-6977_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6145/I1302091_ADNI_Brain_PET_Raw_20200310141815_695770.nii' /root/data_fbb/bids111423helen/sub-6145/ses-baseline/pet/sub-6145_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6253/I1335361_PET_AC_STATIC_EARLY_FRAMES_20200902142727_8.nii' /root/data_fbb/bids111423helen/sub-6253/ses-baseline/pet/sub-6253_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6357/I1336391_Florbetaben_20_MIN_DYN_20200916144221_12.nii' /root/data_fbb/bids111423helen/sub-6357/ses-baseline/pet/sub-6357_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/7059/I1583033_Florbetaben.4x5min.3D.440x.8i5sTOF.2z.AllPass_20220518160859_7.nii' /root/data_fbb/bids111423helen/sub-7059/ses-baseline/pet/sub-7059_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6494/I1454126_PET_AC_NEURACEQ_(Florbetaben)_20210610151943_6.nii' /root/data_fbb/bids111423helen/sub-6494/ses-baseline/pet/sub-6494_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/4856/I1000772_NEURACEQ_3D_Brain_AC_ADNI_20180522132319_4.nii' /root/data_fbb/bids111423helen/sub-4856/ses-baseline/pet/sub-4856_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6115/I961496_PET_Brain_20180207153436_6.nii' /root/data_fbb/bids111423helen/sub-6115/ses-baseline/pet/sub-6115_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6574/I1646551_PET_Brain_-_DYNAMIC_4X5MIN_20221130144903_6.nii' /root/data_fbb/bids111423helen/sub-6574/ses-baseline/pet/sub-6574_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6570/I1624308_PET_Brain_-_DYNAMIC_4X5MIN_20220928154922_6.nii' /root/data_fbb/bids111423helen/sub-6570/ses-baseline/pet/sub-6570_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6942/I1464441_NEURACEQ_3D_Brain_AC_ADNI_20210707125019_6.nii' /root/data_fbb/bids111423helen/sub-6942/ses-baseline/pet/sub-6942_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6204/I991243_PET_Brain_20180501143220_6.nii' /root/data_fbb/bids111423helen/sub-6204/ses-baseline/pet/sub-6204_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6046/I975950_PET_Brain_20180320160828_6.nii' /root/data_fbb/bids111423helen/sub-6046/ses-baseline/pet/sub-6046_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6424/I1048791_ADNI_Brain_PET_Raw_20180912143527_812420.nii' /root/data_fbb/bids111423helen/sub-6424/ses-baseline/pet/sub-6424_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6019/I1183995_ADNI3_florbetaben_Brain_20min_dyn_20190702160729_6.nii' /root/data_fbb/bids111423helen/sub-6019/ses-baseline/pet/sub-6019_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6187/I1014506_PET_Brain_20180627152653_6.nii' /root/data_fbb/bids111423helen/sub-6187/ses-baseline/pet/sub-6187_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/7016/I1510094_ADNI3_florbetaben_4X5_20211028153336_6.nii' /root/data_fbb/bids111423helen/sub-7016/ses-baseline/pet/sub-7016_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6493/I1614950_DYNAMIC_Brain_AC_20220817163225_12.nii' /root/data_fbb/bids111423helen/sub-6493/ses-baseline/pet/sub-6493_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6960/I1519228_PET_AC_NEURACEQ_(Florbetaben)_20211123152300_6.nii' /root/data_fbb/bids111423helen/sub-6960/ses-baseline/pet/sub-6960_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6343/I1010152_ANONYMIZED_20180613151157_4.nii' /root/data_fbb/bids111423helen/sub-6343/ses-baseline/pet/sub-6343_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6439/I1320860_PET_Florbetaben_Dynamic_20200715135958_6.nii' /root/data_fbb/bids111423helen/sub-6439/ses-baseline/pet/sub-6439_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6442/I1044155_Florbetaben_Dyn_4x5min_2Di_336_2z_AllPass_(AC)_20180821143800_3.nii' /root/data_fbb/bids111423helen/sub-6442/ses-baseline/pet/sub-6442_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6001/I827028_ADNI_Brain_PET_Raw_20170307171426_2964.nii' /root/data_fbb/bids111423helen/sub-6001/ses-baseline/pet/sub-6001_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6734/I1245352_ANONYMIZED_20191008141155_4.nii' /root/data_fbb/bids111423helen/sub-6734/ses-baseline/pet/sub-6734_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6941/I1501097_ADNI-20-MIN_(AC)_20211006151745_103.nii' /root/data_fbb/bids111423helen/sub-6941/ses-baseline/pet/sub-6941_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6105/I1282306_ADNI3_florbetaben_Brain_20min_dyn_20200129163722_6.nii' /root/data_fbb/bids111423helen/sub-6105/ses-baseline/pet/sub-6105_ses-baseline_pet.nii
+mv '/root/data_fbb/fbb198/tmp/6192/I1582335_ADNI_Amyloid_4x5min_20220519141730_6.nii' /root/data_fbb/bids111423helen/sub-6192/ses-baseline/pet/sub-6192_ses-baseline_pet.nii
 mv '/root/data_fbb/fbb198/tmp/6992/I1532751_PET_Brain_20220111144307_5.nii' /root/data_fbb/bids111423helen/sub-6992/ses-baseline/pet/sub-6992_ses-baseline_pet.nii
 mv '/root/data_fbb/fbb198/tmp/6277/I986537_Brain_ADNI3_Florbetaben_LM_(AC)_20180417162545_4.nii' /root/data_fbb/bids111423helen/sub-6277/ses-baseline/pet/sub-6277_ses-baseline_pet.nii
 mv '/root/data_fbb/fbb198/tmp/6653/I1146739_PET_AC_NEURACEQ_(Florbetaben)_20190321154057_6.nii' /root/data_fbb/bids111423helen/sub-6653/ses-baseline/pet/sub-6653_ses-baseline_pet.nii
@@ -164,4 +198,3 @@ mv '/root/data_fbb/fbb198/tmp/6360/I1009536_Dyn_Brain_VPHD_6i16s_AC_201806131524
 mv '/root/data_fbb/fbb198/tmp/6969/I1474660_BRAIN_ADNI_20210728132425_12.nii' /root/data_fbb/bids111423helen/sub-6969/ses-baseline/pet/sub-6969_ses-baseline_pet.nii
 mv '/root/data_fbb/fbb198/tmp/6308/I995205_DYNAMIC_Brain_AC_20180508172917_12.nii' /root/data_fbb/bids111423helen/sub-6308/ses-baseline/pet/sub-6308_ses-baseline_pet.nii
 mv '/root/data_fbb/fbb198/tmp/6471/I1619330_PET_Brain_-_DYNAMIC_4X5MIN_20220906140509_6.nii' /root/data_fbb/bids111423helen/sub-6471/ses-baseline/pet/sub-6471_ses-baseline_pet.nii
-
