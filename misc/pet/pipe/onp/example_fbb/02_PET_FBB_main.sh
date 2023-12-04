@@ -5,12 +5,12 @@
 #   format before GIFT processing
 
 # Downloaded FBB pet from ADNI were according 
-#   with subject numbers in 
+#   with subject ID in 
 #   04_ADNI_Downloaded_DCM_FBB.txt file
 #   to /root/data_fbb/ADNI_FBB directory
 
 # Downloaded T1 from ADNI were according 
-#   with subject numbers in 
+#   with image ID in 
 #   34_ADNI_Downloaded_DCM_T1.txt file
 #   to /root/data_fbb/ADNI_T1 directory
 
