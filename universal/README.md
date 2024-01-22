@@ -7,11 +7,13 @@ This will only work within the GSU network (direct or VPN connection is required
 cd #Directory_For_Cloning_Src
 git clone #repo 
 cd #repo
-export DOCKER_DEFAULT_PLATFORM=linux/amd64 
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
+
 docker build -t trends-gift .
 
 #you should adjust your docker desktop to maximize resources that you have available where you are running docker.
-export DOCKER_DEFAULT_PLATFORM=linux/amd64 
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
+
 docker run -it --rm -p 8888:8888 --shm-size=512M -e MLM_LICENSE_FILE=27000@matlab.license.gsu.edu trends-gift -browser
 
 #open your browser or type the following into a terminal: 
