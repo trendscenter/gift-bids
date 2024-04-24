@@ -10,7 +10,7 @@ RUN apt-get update -y \
  && wget https://ssd.mathworks.com/supportfiles/downloads/R2022b/Release/9/deployment_files/installer/complete/glnxa64/MATLAB_Runtime_R2022b_Update_9_glnxa64.zip \
  && unzip MATLAB_Runtime_R2022b_Update_9_glnxa64.zip \
  && ./install -destinationFolder /usr/local/MATLAB/MATLAB_Runtime/ -mode silent -agreeToLicense yes \
- && mkdir -p /app \ 
+ && mkdir -p /app \
  && rm -rf /tmp_mcr \
  && wget -P /app https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/gift/software/bids/v4.0.5.2M2022b/groupica
 # groupica is compiled using MATLAB version R2022b.
