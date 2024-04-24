@@ -14,7 +14,7 @@ If you have MATLAB installed on your computer and you are not interested in runn
 ### Usage <a name="secUsage"></a>
 After Docker is properly installed you can download your gift-bids image from the internet (https://hub.docker.com/u/trends) by following:
 ```
-$ docker pull trends/gift-bids
+$ docker pull trends/gift-bids:v4.0.5.2
 ```
 To run gift-bids you need: 
 1. A directory with image files in accordance with the BIDS format (my_data)
