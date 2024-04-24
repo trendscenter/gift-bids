@@ -58,7 +58,7 @@ TR_PWD=`pwd`
 
 # Downloads the fMRIPrep & giftbids Docker Images from internet (5+ minutes)
 docker pull nipreps/fmriprep 
-docker pull trends/gift-bids
+docker pull trends/gift-bids:v4.0.5.2
 
 mkdir outfMRIPrep # for fMRIPrep results
 mv license.txt outfMRIPrep/. # needed for fMRIPrep
