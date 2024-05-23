@@ -186,6 +186,7 @@ inputData = icatb_eval_script(BIDS_App.config);
 inputData.outputDir = BIDS_App.outdir;
 bids_info.root_dir = BIDS_App.dir;
 bids_info.subjects = BIDS_App.participants; % Cell string of subject ids or leave empty to select all
+bids_info.sessions = BIDS_App.session_label; %Support for sessions
 inputData.bids_info = bids_info;
 inputData.inputFile = BIDS_App.config;
 
