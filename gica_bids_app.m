@@ -186,7 +186,18 @@ inputData = icatb_eval_script(BIDS_App.config);
 inputData.outputDir = BIDS_App.outdir;
 bids_info.root_dir = BIDS_App.dir;
 bids_info.subjects = BIDS_App.participants; % Cell string of subject ids or leave empty to select all
-bids_info.sessions = BIDS_App.session_label; %Support for sessions
+try
+    bids_info.sessions = BIDS_App.session_label; %Support for sessions
+catch
+    %Give a warning about sessions if sessions are found in BIDS structure
+    %and not set up in input
+    for i=1:length(BIDS.subjects)
+        if contains(lower(BIDS.subjects(i).session),'ses')
+            disp(['gift-bidsWarning ' char(datetime) '. gica_bids_app.m: Sessions found in BIDS folder, but not set up sessions using --participant_label']);
+            break;
+        end
+    end
+end
 inputData.bids_info = bids_info;
 inputData.inputFile = BIDS_App.config;
 
