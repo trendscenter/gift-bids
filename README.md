@@ -20,7 +20,7 @@ To run gift-bids you need:
 1. A directory with image files in accordance with the BIDS format (my_data)
 2. An empty output directory (gift_out) you may create
 3. A configuration directory with your configuration file and change the syntax of ZZZ in accordance with box below and your configuration file.
-4. Choose subject(s) you want to process, by replacing XX YY NN with subject number(s) and AA and BB with session numbers in box below (e.g., 01 02 ... NN) and you may run:
+4. Choose subject(s) you want to process, by replacing XX YY NN with subject number(s) and AA and BB with session numbers in box below (e.g., for subjects: 01 02 ... NN and for sessions ses-01 ses-02) and you may run:
 ```
 $ docker run -ti --rm \
   -v /tmp:/tmp \
