@@ -14,13 +14,13 @@ If you have MATLAB installed on your computer and you are not interested in runn
 ### Usage <a name="secUsage"></a>
 After Docker is properly installed you can download your gift-bids image from the internet (https://hub.docker.com/u/trends) by following:
 ```
-$ docker pull trends/gift-bids:v4.0.5.2
+$ docker pull trends/gift-bids:v4.0.5.3
 ```
 To run gift-bids you need: 
 1. A directory with image files in accordance with the BIDS format (my_data)
 2. An empty output directory (gift_out) you may create
 3. A configuration directory with your configuration file and change the syntax of ZZZ in accordance with box below and your configuration file.
-4. Choose subject(s) you want to process, by replacing XX YY NN with subject number(s) in box below (e.g., 01 02 ... NN) and you may run:
+4. Choose subject(s) you want to process, by replacing XX YY NN with subject number(s) and AA and BB with session numbers in box below (e.g., 01 02 ... NN) and you may run:
 ```
 $ docker run -ti --rm \
   -v /tmp:/tmp \
@@ -30,6 +30,7 @@ $ docker run -ti --rm \
   -v /path/to/local/cfg/:/cfg \
   trends/gift-bids \
     /data /output participant --participant_label XX YY NN \
+    --session_label ses-AA ses-BB \
     --config /cfg/config_ZZZ.m
 ```
 ### Demo <a name="secDemo"></a>
