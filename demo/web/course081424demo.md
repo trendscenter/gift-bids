@@ -6,8 +6,8 @@ A demo (gift-bids-demo.sh) is available, using a public fMRI dataset and the fMR
 1. Install Docker desktop [https://www.docker.com/products/personal](https://www.docker.com/products/docker-desktop/).
 2. Open Windows power shell, create and go to working directory of your choice, that we will further call c:\users\me. then run following commands in powershell
 3. ```
-Invoke-WebRequest -Uri "https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/gift/data/demo_input3neuromark.zip" -OutFile "demo_input3neuromark.zip"
-```
+   Invoke-WebRequest -Uri "https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/gift/data/demo_input3neuromark.zip" -OutFile "demo_input3neuromark.zip"
+   ```
 4.
 ```
 cd c:\users\me\demo_input3neuromark\cfg
