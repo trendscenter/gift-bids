@@ -15,7 +15,7 @@ cd c:\users\me\demo_input3neuromark\cfg
 ```
 5.
 ```
-Invoke-WebRequest -Uri "https://github.com/trendscenter/gift-bids/blob/main/demo/cfg/config_multi_ses.m" -OutFile "config_multi_ses.m"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/trendscenter/gift-bids/main/demo/cfg/config_multi_ses.m" -OutFile "config_multi_ses.m"
 ```
 6. 
 ```
@@ -38,7 +38,7 @@ cd ~/demo_input3neuromark/cfg
 ```
 5.
 ```
-wget https://github.com/trendscenter/gift-bids/blob/main/demo/cfg/config_multi_ses.m
+wget https://raw.githubusercontent.com/trendscenter/gift-bids/main/demo/cfg/config_multi_ses.m
 ```
 6. 
 ```
