@@ -5,9 +5,14 @@ A demo (gift-bids-demo.sh) is available, using a public fMRI dataset and the fMR
 ### Demo for Windows 10/11 users
 1. Install Docker desktop [https://www.docker.com/products/personal](https://www.docker.com/products/docker-desktop/).
 2. Open Windows power shell, create and go to working directory of your choice, that we will further call c:\users\me. then run following commands in powershell
-3. Invoke-WebRequest -Uri "https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/gift/data/demo_input3neuromark.zip" -OutFile "demo_input3neuromark.zip" 
-4. cd c:\users\me\demo_input3neuromark\cfg
-5. Invoke-WebRequest -Uri "https://github.com/trendscenter/gift-bids/blob/main/demo/cfg/config_multi_ses.m" -OutFile "config_multi_ses.m"
+3.
+```Invoke-WebRequest -Uri "https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/gift/data/demo_input3neuromark.zip" -OutFile "demo_input3neuromark.zip" ```
+4.
+```cd c:\users\me\demo_input3neuromark\cfg```
+5.
+```
+Invoke-WebRequest -Uri "https://github.com/trendscenter/gift-bids/blob/main/demo/cfg/config_multi_ses.m" -OutFile "config_multi_ses.m"
+```
 6. 
 ```
 docker run -ti --rm -v C:\temp:/tmp  -v C:\temp:/var/tmp -v C:\users\me\demo_input3neuromark\:/data -v C:\users\me\demo_input3neuromark\gift_out_my081424:/output  -v C:\users\me\demo_input3neuromark\cfg\:/cfg  trends/gift-bids:v4.0.5.3 /data /output participant --participant_label 007 --config /cfg/config_multi_ses.m
