@@ -35,14 +35,14 @@ At first run docker has to download the GIFT Docker image that may take 15 min t
    ```
 6. ```
    docker run -ti --rm \
-  -v /tmp:/tmp \
-  -v /var/tmp:/var/tmp \
-  -v ~/demo_input3neuromark:/data \
-  -v ~/demo_input3neuromark/gift_out_my081424:/output \
-  -v ~/demo_input3neuromark/cfg:/cfg \
-  trends/gift-bids:v4.0.5.3 \
-    /data /output participant --participant_label 007 \
-    --config /cfg/config_multi_ses.m
+     -v /tmp:/tmp \
+     -v /var/tmp:/var/tmp \
+     -v ~/demo_input3neuromark:/data \
+     -v ~/demo_input3neuromark/gift_out_my081424:/output \
+     -v ~/demo_input3neuromark/cfg:/cfg \
+     trends/gift-bids:v4.0.5.3 \
+       /data /output participant --participant_label 007 \
+       --config /cfg/config_multi_ses.m
    ```
 At first run docker has to download the GIFT Docker image that may take 15 min to download and initiate. Then the GIFT-BIDS may take 15 minutes to run and you will find an HTML report after your gift-bids run at ~/demo_input3neuromark/gift_out_my081424/neuromark_gica_results/icatb_gica_html_report.html, which you may be able to double click to open up in web browser.
 
