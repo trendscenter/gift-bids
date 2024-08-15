@@ -9,11 +9,11 @@ A demo (gift-bids-demo.sh) is available, using a public fMRI dataset and the fMR
 ```
 Invoke-WebRequest -Uri "https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/gift/data/demo_input3neuromark.zip" -OutFile "demo_input3neuromark.zip"
 ```
-5.
+4.
 ```
 cd c:\users\me\demo_input3neuromark\cfg
 ```
-7.
+5.
 ```
 Invoke-WebRequest -Uri "https://github.com/trendscenter/gift-bids/blob/main/demo/cfg/config_multi_ses.m" -OutFile "config_multi_ses.m"
 ```
