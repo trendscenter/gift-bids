@@ -28,9 +28,18 @@ At first run docker has to download the GIFT Docker image that may take 15 min t
 ### Demo for Mac users
 1. Install Docker desktop [https://www.docker.com/products/personal](https://www.docker.com/products/docker-desktop/).
 2. Open terminal, create and go to working directory of your choice, that we will further call ~. then run following commands in terminal
-3. wget https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/gift/data/demo_input3neuromark.zip
-4. cd ~/demo_input3neuromark/cfg
-5. wget https://github.com/trendscenter/gift-bids/blob/main/demo/cfg/config_multi_ses.m
+3.
+```
+wget https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/gift/data/demo_input3neuromark.zip
+```
+4.
+```
+cd ~/demo_input3neuromark/cfg
+```
+5.
+```
+wget https://github.com/trendscenter/gift-bids/blob/main/demo/cfg/config_multi_ses.m
+```
 6. 
 ```
 $ docker run -ti --rm \
