@@ -1,4 +1,4 @@
-# Demo to run GIFT BIDS 081424
+# Demo to run GIFT BIDS 8/14/2024 fMRI Course
 
 A demo (gift-bids-demo.sh) is available, using a public fMRI dataset and the fMRIPrep BIDS app to preprocess and smooth the fMRI data. In 6 simple steps you may run the entire demo:
 
