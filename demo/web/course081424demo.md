@@ -7,7 +7,7 @@ A demo (gift-bids-demo.sh) is available, using a public fMRI dataset and the fMR
 3. wget https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/gift/data/demo_input3neuromark.zip
 4. cd ~/demo_input3neuromark/cfg
 5. wget https://github.com/trendscenter/gift-bids/blob/main/demo/cfg/config_multi_ses.m
-6. test
+6. 
 ```
 $ docker run -ti --rm \
   -v /tmp:/tmp \
