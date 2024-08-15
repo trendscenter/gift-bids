@@ -7,10 +7,6 @@
 %% Modality. Options are fMRI and EEG
 modalityType = 'fMRI';
 
-%% Output directory
-outputDir = '/home/cyrus/ext4max/fromSsd/Documents/trends/work/2024/misc/giftbids051624multiSes/out/02';
-
-
 %% Enter TR in seconds. If TRs vary across subjects, TR must be a row vector of length equal to the number of subjects.
 TR = 2;
 
