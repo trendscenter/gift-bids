@@ -2,19 +2,21 @@
 
 # TReNDs 112523
 # Cyrus Eierud
+# Helen Petropoulos 082024
 
 # Prerequisits: FSL 7.4.1, Ubuntu 20.04
 
-SUBJID=${1}
+SUBJSESID=${1}
+echo $SUBJSESID
+SUBJID=$(echo $SUBJSESID | cut -d '_' -f 1 )
+SESID=$(echo $SUBJSESID | cut -d '_' -f 2 )
 DIR_BIDS_ROOT=${2}
 DIR_BIDS_ROOT_GIFT=${2}"/derivatives/GIFT-BIDS/"
 
 # Initiate all Input files from petsurfer & PetPrepMatlab
-im4petFramesNii=`find ${DIR_BIDS_ROOT}"/derivatives/PETPrep/sub-"${SUBJID} -name "sub-"${SUBJID}"*_space-mni305_pvc-nopvc_desc-preproc_pet.nii*"`
-
-tsvPetTacs=`find ${DIR_BIDS_ROOT}"/derivatives/PETPrep/sub-"${SUBJID} -name "sub-"${SUBJID}"*_pvc-nopvc_desc-mc_tacs.tsv"`
-
-txtPetVoxSize=`find ${DIR_BIDS_ROOT}"/derivatives/PETPrep/sub-"${SUBJID} -name "gtm.stats.dat"`
+im4petFramesNii=`find ${DIR_BIDS_ROOT}"/derivatives/PETPrep/"${SUBJID} -name ${SUBJSESID}"*_space-mni305_pvc-nopvc_desc-preproc_pet.nii*"`
+tsvPetTacs=`find ${DIR_BIDS_ROOT}"/derivatives/PETPrep/"${SUBJID} -name ${SUBJSESID}"*_pvc-nopvc_desc-mc_tacs.tsv"`
+txtPetVoxSize=`find ${DIR_BIDS_ROOT}"/derivatives/PETPrep/sub-"${SUBJID}"/"${SUBJSESID} -name "gtm.stats.dat"`
 
 # ls ${im4petFramesNii}
 # ls ${tsvPetTacs}
@@ -53,12 +55,12 @@ D_INTEN=`echo "scale=9; ${D_INTEN_CEREB_L}*${D_CEREB_RATIO}+${D_INTEN_CEREB_R}*(
 # verbose: echo ${D_INTEN} && echo D_INTEN_CEREB_L && echo ${D_INTEN_CEREB_L} && echo D_INTEN_CEREB_R && echo ${D_INTEN_CEREB_R}
 
 DIR_BIDS_ROOT_GIFT_PP=${DIR_BIDS_ROOT_GIFT}"preproc/"
-mkdir -p ${DIR_BIDS_ROOT_GIFT_PP}"sub-"${SUBJID}
+mkdir -p ${DIR_BIDS_ROOT_GIFT_PP}"/"${SUBJID}"/"${SESID}
 
 # Average the PET frames
-fslmaths ${im4petFramesNii} -Tmean ${DIR_BIDS_ROOT_GIFT_PP}"sub-"${SUBJID}"/mni305TmeanTmp"
+fslmaths ${im4petFramesNii} -Tmean ${DIR_BIDS_ROOT_GIFT_PP}"/"${SUBJID}"/"${SESID}"/mni305TmeanTmp"
 
 # Divide by inintensity and size ratio
-fslmaths ${DIR_BIDS_ROOT_GIFT_PP}"sub-"${SUBJID}"/mni305TmeanTmp.nii" -div ${D_INTEN} ${DIR_BIDS_ROOT_GIFT_PP}"sub-"${SUBJID}"/sub-"${SUBJID}"_space-mni305_desc-suvr+cerebcx+4gift_pet"
+fslmaths ${DIR_BIDS_ROOT_GIFT_PP}"/"${SUBJID}"/"${SESID}"/mni305TmeanTmp.nii" -div ${D_INTEN} ${DIR_BIDS_ROOT_GIFT_PP}"/"${SUBJID}"/"${SESID}"/"${SUBJSESID}"_space-mni305_desc-suvr+cerebcx+4gift_pet"
 
-rm ${DIR_BIDS_ROOT_GIFT_PP}"sub-"${SUBJID}"/mni305TmeanTmp.nii.gz"
+rm ${DIR_BIDS_ROOT_GIFT_PP}"/"${SUBJID}"/"${SESID}"/mni305TmeanTmp.nii.gz"
