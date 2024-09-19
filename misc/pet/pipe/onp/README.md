@@ -32,8 +32,8 @@ The following is an ouline of the different steps used to process PET for GIFT.
     3. From command shell, run: 
         1. <pre>matlab -nodesktop -nosplash -r "PETPrep(' /myfiles/bidsRoot/ ', 'config.json');exit;"</pre>
 6. Finally the custom BASH script [trnSuvr.sh](https://github.com/trendscenter/gift-bids/blob/main/misc/pet/pipe/onp/trnSuvr.sh) were used to average the 4 PET FBP frames (now in MNI space) into a single image normalizing intensities using the standardized uptake value ratio and the cerebellar cortex region, using the following syntax:
-    1. <pre>./trnSuvr.sh xxxx /myfiles/bidsRoot/</pre> 
-    2. , where xxxx is the subject ID. This bash script only runs one subject at a time.
+    1. <pre>./trnSuvr.sh sub-xxxx_sesYYMMDD /myfiles/bidsRoot/</pre>
+    2. , where xxxx is the subject ID and YYMMDD is the sessionID (which could be the scan date). This bash script only runs one session at a time.
     3. The SUVR image results are saved under: /myfiles/bidsRoot/derivatives/GIFT-BIDS/preproc/sub-xxxx
 7. Having these SUVR normalized images, enables multiple second stage analyses.
     1. One second stage analysis was to first performed a conservative one-sample ttest to only include the voxels that have significantly (p < 0.0001) more uptake than the cerebellar cortex, creating a stringent mask.
