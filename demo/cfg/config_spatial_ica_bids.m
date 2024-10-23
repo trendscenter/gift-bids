@@ -43,7 +43,7 @@ prefix = 'neuromark';
 
 %% Enter location (full file path) of the image file to use as mask
 % or use Default mask which is []
-maskFile = [];
+maskFile = 'default&icv';
 
 
 %% Data Pre-processing options
