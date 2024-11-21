@@ -28,7 +28,7 @@ $ docker run -ti --rm \
   -v /path/to/local/bids/input/my_data/:/data \
   -v /path/to/local/gift_out/:/output \
   -v /path/to/local/cfg/:/cfg \
-  trends/gift-bids \
+  trends/gift-bids:v4.0.5.3 \
     /data /output participant --participant_label XX YY NN \
     --session_label ses-AA ses-BB \
     --config /cfg/config_ZZZ.m
