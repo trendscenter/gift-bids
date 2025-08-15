@@ -174,6 +174,8 @@ BIDS = icatb_spm_BIDS(BIDS_App.dir);
 
 %- --participant_label
 %--------------------------------------------------------------------------
+% Remove sub- label before BIDS search
+BIDS_App.participants = strrep(BIDS_App.participants, 'sub-', '');
 if isempty(BIDS_App.participants)
     BIDS_App.participants = icatb_spm_BIDS(BIDS,'subjects');
 else
@@ -182,7 +184,8 @@ else
         error('Participant directory "%s" does not exist.',df{1});
     end
 end
-BIDS_App.participants = cellfun(@(s) ['sub-' s], BIDS_App.participants, 'UniformOutput',false);
+% Return sub- label after BIDS search
+BIDS_App.participants = strcat('sub-', BIDS_App.participants);
 
 
 %% pass inputs to gift
@@ -191,6 +194,8 @@ inputData.outputDir = BIDS_App.outdir;
 bids_info.root_dir = BIDS_App.dir;
 bids_info.subjects = BIDS_App.participants; % Cell string of subject ids or leave empty to select all
 try
+    need_pref = ~startsWith(BIDS_App.session_label, 'ses-');
+    BIDS_App.session_label(need_pref) = strcat('ses-', BIDS_App.session_label(need_pref));
     bids_info.sessions = BIDS_App.session_label; %Support for sessions
 catch
     %Give a warning about sessions if sessions are found in BIDS structure
