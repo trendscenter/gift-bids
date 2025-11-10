@@ -72,7 +72,7 @@ numOfPC1 = 40;
 scaleType = 0;
 
 %% Report generator 
-display_results = 0;
+display_results = 1;
 
 %% Back-reconstruction type
 backReconType = 4;
