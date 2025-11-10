@@ -35,7 +35,7 @@ input_data_file_patterns = {'/data/sub-01/pet/sub-01_task-rest_pet.nii' ;
 %% Output files prefix
 prefix = 'blind';
 
-%% modalityType may be fMRI, EEG, and smr 
+%% modalityType may be fMRI, EEG, and sMRI
 modalityType = 'sMRI';
 
 %% Dummy scans
