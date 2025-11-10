@@ -16,7 +16,7 @@ preproc_type = 1;
 %preproc_type = 'none';
 
 %% Performance type
-perfType = 1
+perfType = 1;
 
 %% Reliability analysis
 which_analysis = 1;
@@ -83,7 +83,7 @@ scaleType = 0;
 refFiles = '/cfg/Neuromark_PET-FBP_1.0_modelorder-40_2x2x2.nii';
 
 %% Report generator 
-display_results = 0;
+display_results = 1;
 
 %% Parallel info %DIFF
 % enter mode serial or parallel. If parallel, enter number of
