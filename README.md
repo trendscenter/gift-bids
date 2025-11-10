@@ -31,7 +31,7 @@ $ docker run -ti --rm \
   trends/gift-bids:v4.0.5.3 \
     /data /output participant --participant_label XX YY NN \
     --session_label ses-AA ses-BB \
-    --config /cfg/config_ZZZ.m
+    --config /cfg/Input_ZZZ.m
 ```
 ### Demo <a name="secDemo"></a>
 A demo (gift-bids-demo.sh) is available, using a public fMRI dataset and the fMRIPrep BIDS app to preprocess and smooth the fMRI data. In 6 simple steps you may run the entire demo:
