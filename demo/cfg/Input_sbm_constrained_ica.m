@@ -38,9 +38,8 @@ dataSelectionMethod = 4;
 %% modalityType may be fMRI, EEG, and sMRI 
 modalityType = 'sMRI';
 
-%% Input file patterns  /home/cyrus/Documents/trends/work/2023/onpPetNeuroMark031723/jill/sbm100923/subjAll897
-input_data_file_patterns = {'/data/sub-01/pet/sub-01_task-rest_pet.nii' ;
-};
+%% Input file patterns 
+input_data_file_patterns = {'/out/input_sbm/multisubject_sbm.nii' ;};
 
 %% Dummy scans
 dummy_scans = 0;
