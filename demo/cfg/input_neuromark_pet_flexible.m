@@ -39,7 +39,7 @@ dataSelectionMethod = 4;
 modalityType = 'sMRI';
 
 %% Input file patterns 
-input_data_file_patterns = {'/data/sub-01/pet/sub-01_task-rest_pet.nii' ;};
+input_data_file_patterns = {'/out/input_sbm/multisubject_sbm.nii' ;};
 
 %% Dummy scans
 dummy_scans = 0;
