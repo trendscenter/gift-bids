@@ -1,1 +1,1 @@
-Additional files used at the docker server.
+Additional files useful at the docker host.
