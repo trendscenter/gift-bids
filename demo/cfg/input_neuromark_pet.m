@@ -28,7 +28,7 @@ icaOptions{1,1} = 'posact';
 icaOptions{1,2} = 'on';
 
 %% Output directory
-outputDir = '/output';
+outputDir = '/out';
 
 %% Output files prefix
 prefix = 'GIGICA';
