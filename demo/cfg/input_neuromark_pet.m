@@ -79,7 +79,7 @@ scaleType = 0;
 
 %% Spatial references 
 %refFiles = which('Neuromark_fMRI_1.0.nii');
-refFiles = '/cfg/Neuromark_PET-FBP_1.0_modelorder-40_2x2x2.nii';
+refFiles = '/cfg/icatb/Neuromark_PET-FBP_1.0_modelorder-40_2x2x2.nii';
 
 %% Report generator 
 display_results = 1;
