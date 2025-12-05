@@ -1,4 +1,4 @@
-%% Batch script to run Constrained NeuroMark ICA on SBM (or PET) 
+%% Batch script to run Constrained NeuroMark ICA on PET (or SBM) 
 % using external template
 % Enter the values for the variables required for the ICA analysis.
 % Variables are on the left and the values are on the right.
