@@ -1,0 +1,11 @@
+{
+    "Name": "SPECT",
+    "BIDSVersion": "1.4.0",
+    "DatasetType": "derivative",
+    "GeneratedBy": [
+        {
+            "Name": "Max intenity norm and MNI norm"
+        }
+    ],
+    "HowToAcknowledge": "."
+}
