@@ -38,7 +38,7 @@ At first run docker has to download the GIFT Docker image that may take 15 min t
      -v /tmp:/tmp \
      -v /var/tmp:/var/tmp \
      -v ~/demo_input3neuromark:/data \
-     -v ~/demo_input3neuromark/gift_out_my081424:/output \
+     -v ~/demo_input3neuromark/gift_out_my081424:/out \
      -v ~/demo_input3neuromark/cfg:/cfg \
      trends/gift-bids:v4.0.5.3 \
        /data /output participant --participant_label 007 \
