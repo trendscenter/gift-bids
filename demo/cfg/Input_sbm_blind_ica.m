@@ -78,7 +78,7 @@ display_results = 1;
 backReconType = 4;
 
 %% Output directory
-outputDir = '/output';
+outputDir = '/out';
 
 %%  MDL Batch Estimation. If 1 is specified then estimation of 
 % the components takes place and the corresponding PC numbers are associated
