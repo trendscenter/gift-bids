@@ -100,7 +100,7 @@ docker run -ti --rm \
     -v /tmp:/tmp \
     -v /var/tmp:/var/tmp \
     -v ${TR_PWD}/ds005-gift/:/data \
-    -v ${TR_PWD}/ds005-gift-out/:/output \
+    -v ${TR_PWD}/ds005-gift-out/:/out \
     -v ${TR_PWD}/cfg/:/cfg \
     trends/gift-bids \
     /data /output participant --participant_label 01 \
