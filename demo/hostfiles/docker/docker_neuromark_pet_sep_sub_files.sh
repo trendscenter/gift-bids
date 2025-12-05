@@ -40,7 +40,7 @@ docker run -ti --rm \
   -v $DIR_CFG:/cfg \
   trends/gift-bids:v4.0.5.3 \
     /data /out participant \
-    --config /cfg/input_neuromark_pet.m
+    --config /cfg/input_neuromark_pet_flexible.m
 
 
 # Exports NII (of time course) to CSV
